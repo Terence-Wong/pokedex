@@ -1,1 +1,10 @@
-{{pokemon}}
+<h2>Pokemon</h2>
+<ul class="pokemonList">
+  <div *ngFor="let pokemon of pokemonData">
+    <a routerLink="/pokemonDetail/{{pokemon.id}}">
+      <li>  
+        <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
+      </li>
+    </a>
+  </div>
+</ul>
