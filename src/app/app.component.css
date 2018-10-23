@@ -6,7 +6,5 @@ h1{
 .app{
   height: 100%;
   width: 100%;
-}
-.sideBar{
-  height: 100%;
+  display: flex;
 }

@@ -8,6 +8,13 @@
   padding: 0;
   width: 15em;
 }
+.pokemonList a{
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 300px;
+}
 .pokemonList li {
   cursor: pointer;
   position: relative;
@@ -44,4 +51,10 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+.pokemonList{
+  overflow-y: scroll;
+  height: 90%;
+  width: auto;
+  margin: 0;
 }
