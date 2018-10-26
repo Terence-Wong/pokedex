@@ -1,6 +1,6 @@
-<h2>Pokemon</h2>
+<input #searchBox id="search-box" (keyup)="search(searchBox.value)"/>
 <ul class="pokemonList">
-  <div *ngFor="let pokemon of pokemonData">
+  <div *ngFor="let pokemon of pokemonData$ | async">
     <a routerLink="/pokemonDetail/{{pokemon.id}}">
       <li>  
         <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
