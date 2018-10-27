@@ -15,6 +15,7 @@ import { Pokemon } from '../pokemon';
 })
 export class PokemonDetailComponent implements OnInit {
   @Input() pokemon: Pokemon;
+  imageUrl: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -36,7 +37,22 @@ export class PokemonDetailComponent implements OnInit {
   getPokemon(): void{
     const id = +this.route.snapshot.paramMap.get('id');
     this.pokemonService.getPokemon(id)
-      .subscribe(pokemon => this.pokemon = pokemon);
+      .subscribe(pokemon =>{ 
+        this.pokemon = pokemon;
+        this.imageUrl = this.getImageUrl();
+      });
   }
-
+  getImageUrl(): string{
+    
+    let id = this.route.snapshot.paramMap.get('id');
+    while(id.length < 3){
+      id = '0' + id;
+    }
+    if(+this.route.snapshot.paramMap.get('id') == 122){ //mr mime//83 farfetched?
+      return '../../assets/images/250px-122mr-mime.jpg'
+    }else if(+this.route.snapshot.paramMap.get('id') == 83){
+      return '../../assets/images/250px-083Farfetchd.jpg'
+    }
+    return '../../assets/images/250px-'+id+this.pokemon.name+'.png';
+  }
 }

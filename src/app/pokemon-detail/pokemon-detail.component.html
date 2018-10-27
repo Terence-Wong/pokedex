@@ -1,6 +1,7 @@
 <div *ngIf="pokemon">
 
   <h2>{{pokemon.name | uppercase}} Details</h2>
+  <img width="400" alt="{{pokemon.name}}" src="{{imageUrl}}">
   <div><span>id: </span>{{pokemon.id}}</div>
   <div>
     <label>name:
