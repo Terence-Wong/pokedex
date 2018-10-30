@@ -12,14 +12,17 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { DataViewComponent } from './data-view/data-view.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 import { PokemonSearchComponent } from './pokemon-search/pokemon-search.component';
+import { StatChartComponent } from './stat-chart/stat-chart.component';
 
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
     DataViewComponent,
     PokemonDetailComponent,
-    PokemonSearchComponent
+    PokemonSearchComponent,
+    StatChartComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { PokemonSearchComponent } from './pokemon-search/pokemon-search.componen
     FormsModule,
     HttpClientModule,
     HttpClientModule,
+    ChartsModule,
     //yo delete this if you ever get a real data server
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {dataEncapsulation: false}

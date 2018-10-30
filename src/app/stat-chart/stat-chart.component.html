@@ -1,0 +1,11 @@
+<div *ngIf="poke">
+  <div style="display: block">
+    <canvas baseChart
+            *ngIf="poke"
+            [datasets]="radarChartData"
+            [labels]="radarChartLabels"
+            [chartType]="radarChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>

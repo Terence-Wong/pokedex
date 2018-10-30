@@ -1,12 +1,14 @@
 <div *ngIf="pokemon">
 
   <h2>{{pokemon.name | uppercase}} Details</h2>
-  <img width="400" alt="{{pokemon.name}}" src="{{imageUrl}}">
+  <div class="imageDiv">
+    <img width="400" alt="{{pokemon.name}}" src="{{imageUrl}}">
+  </div>
   <div><span>id: </span>{{pokemon.id}}</div>
   <div>
     <label>name:
       <input [(ngModel)]="pokemon.name" placeholder="name"/>
     </label>
   </div>
-
+  <app-stat-chart [poke]="pokemon"></app-stat-chart>
 </div>

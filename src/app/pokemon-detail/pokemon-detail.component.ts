@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
@@ -14,7 +14,7 @@ import { Pokemon } from '../pokemon';
   styleUrls: ['./pokemon-detail.component.css']
 })
 export class PokemonDetailComponent implements OnInit {
-  @Input() pokemon: Pokemon;
+  pokemon: Pokemon;
   imageUrl: string;
 
   constructor(
@@ -55,4 +55,7 @@ export class PokemonDetailComponent implements OnInit {
     }
     return '../../assets/images/250px-'+id+this.pokemon.name+'.png';
   }
+
+
+  
 }
