@@ -2,10 +2,12 @@
   <div style="display: block">
     <canvas baseChart
             *ngIf="poke"
+            height="300px" width="300px"
             [datasets]="radarChartData"
             [labels]="radarChartLabels"
             [chartType]="radarChartType"
             (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
+            (chartClick)="chartClicked($event)"
+            [options]="chartOptions"></canvas>
   </div>
 </div>

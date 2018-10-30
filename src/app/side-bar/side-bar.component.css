@@ -49,10 +49,38 @@
 .pokemonList{
   overflow-y: scroll;
   height: 90%;
+  
   width: 19em;
   margin: 0;
   list-style-type: none;
   padding:0;
+ 
+}
+
+.searchBar{
+  height: 3em;
+  border: solid #000;
+  border-width: 0 0 2px 0;
+  padding-left: 1em; 
+  padding-right: 1em; 
+}
+
+.searchBox{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center
+}
+
+#search-box{
+  width: -moz-available;
 }
 
 
+
+
+.side-bar{
+  border: solid black;
+  border-width: 0 2px 0 0;
+  height: 100%; 
+}

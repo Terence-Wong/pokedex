@@ -1,0 +1,27 @@
+.pokemon-detail{
+  /*background: #000000;*/
+  padding: 30px;
+}
+.body-box{
+  background: white;
+
+}
+.poke-box{
+  height: 400px;
+  width: -moz-fit-content;
+  float:left;
+}
+.stat-box{
+  float:right;
+}
+.imageDiv{
+  height: 400px;
+  width: 400px;
+}
+
+app-pokemon-detail{
+  width: -moz-available;
+}
+h2{
+  margin: 0;
+}
