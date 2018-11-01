@@ -1,9 +1,10 @@
 <div *ngIf="pokemon" class="pokemon-detail">
   <div class="body-box">
-    <h2>{{pokemon.name | uppercase}}</h2>
+    <h2>#<span class="titleName">{{pokemon.id}} </span>{{pokemon.name | uppercase}}</h2>
+    <hr class="line">
     <div class="poke-box">
       <div class="imageDiv">
-        <img width="400" alt="{{pokemon.name}}" src="{{imageUrl}}">
+        <img width="300" alt="{{pokemon.name}}" src="{{imageUrl}}">
       </div>
       <div><span>id: </span>{{pokemon.id}}</div>
     </div>

@@ -1,27 +1,53 @@
 .pokemon-detail{
-  /*background: #000000;*/
-  padding: 30px;
+  background: #607D8B;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
 }
 .body-box{
   background: white;
-
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 20px;
 }
 .poke-box{
-  height: 400px;
-  width: -moz-fit-content;
+  
+  height: calc(100% - 40px - 60px);
   float:left;
+  margin: 15px;
+  
+  border-radius: 20px;
+  border: solid #000;
+  border-width: 0 0 6px 0;
+  background: #f3f3f3;
 }
 .stat-box{
-  float:right;
+  float:left;
 }
 .imageDiv{
   height: 400px;
   width: 400px;
+  border-radius: 20px;
+  border: solid #575757;;
+  border-width: 5px 0 5px 0;
+  padding: 10px;
+  background: #eff2f3;
+  text-align: center;
+  
 }
-
-app-pokemon-detail{
+.imageDiv img{
+  vertical-align: middle;
+}
+:host {
   width: -moz-available;
 }
 h2{
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  padding-left:1em;
+}
+.name{
+  font-weight: bold;
 }
