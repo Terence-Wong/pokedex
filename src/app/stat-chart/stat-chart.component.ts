@@ -8,6 +8,7 @@ import { Pokemon } from '../pokemon';
 export class StatChartComponent implements OnInit {
   @Input() poke: Pokemon;// = {id:0,name:"",stats:[1,1,1,1,1,1,1,1],type:[]};
   radarChartLabels:string[] = ['HP', 'Attack', 'Defense', 'Sp. Attack', 'Sp. Defense', 'Speed'];
+  stats: number[];
   chartOptions = {
     
     responsive: true,
@@ -25,17 +26,17 @@ export class StatChartComponent implements OnInit {
   radarChartData:any;
   constructor() { }
   ngOnInit() {
-    let stats: number[] = this.poke.stats;
-    stats.shift();
+    this.stats = this.poke.stats.slice();
+    this.stats.shift();
     this.radarChartData = [
-      {data: stats, label: 'Stats'}
+      {data: this.stats, label: 'Stats'}
     ];
   }
   ngOnChanges(){
-    let stats: number[] = this.poke.stats;
-    stats.shift();
+    this.stats = this.poke.stats.slice();
+    this.stats.shift();
     this.radarChartData = [
-      {data: stats, label: 'Stats'}
+      {data: this.stats, label: 'Stats'}
     ];
   }
 

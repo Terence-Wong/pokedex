@@ -1,0 +1,13 @@
+.stats th{
+  font-weight: 100;
+}
+.stats{
+  margin: auto;
+}
+.bold th{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.statBlock{
+  text-align: center;
+}

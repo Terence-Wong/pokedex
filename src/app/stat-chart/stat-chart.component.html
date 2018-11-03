@@ -1,4 +1,4 @@
-<div *ngIf="poke">
+<div *ngIf="poke" class="statBlock">
   <div style="display: block">
     <canvas baseChart
             *ngIf="poke"
@@ -10,4 +10,15 @@
             (chartClick)="chartClicked($event)"
             [options]="chartOptions"></canvas>
   </div>
+
+  <table class="stats">
+    <tr class="bold">
+      <th>Total:</th>
+      <th>{{poke.stats[0]}}</th>  
+    </tr>
+    <tr *ngFor="let label of radarChartLabels; let i = index" [attr.data-index]="i">
+        <th>{{label}}</th>
+        <th>{{stats[i]}}</th> 
+    </tr>
+  </table>
 </div>

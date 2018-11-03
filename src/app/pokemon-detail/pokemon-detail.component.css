@@ -38,6 +38,7 @@
 }
 .imageDiv img{
   vertical-align: middle;
+  margin-top:10%;
 }
 :host {
   width: -moz-available;
