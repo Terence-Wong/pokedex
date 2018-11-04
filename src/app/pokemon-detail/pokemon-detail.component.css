@@ -52,3 +52,74 @@ h2{
 .name{
   font-weight: bold;
 }
+
+.types{
+  color: white;
+  background: #b06161;
+  padding: 6px;
+  border-radius: 8px;
+  text-shadow: 2px 2px grey;
+  color:white;
+}
+table{
+  margin: auto;
+  margin-top:5px;
+}
+.detail{
+  text-align: center;
+}
+
+
+
+/*TYPES*/
+.fire{
+  background:red;
+}
+.normal{
+  background: #a9a878;
+}
+.water{
+  background: #6890f0;
+}
+.electric{
+  background: #f8d030;
+}
+.grass{
+  background: #79c851;
+}
+.ice{
+  background: #98d8d8;
+}
+.fighting{
+  background: #c03028;
+}
+.poison{
+  background: #a040a1;
+}
+.ground{
+  background: #a040a1;
+}
+.flying{
+  background: #a890f0;
+}
+.psychic{
+  background: #f85888;
+}
+.bug{
+  background: #a8b821;
+}
+.rock{
+  background: #b89f38;
+}
+.ghost{
+  background: #705798;
+}
+.dragon{
+  background: #6f36fc;
+}
+.dark{
+  background: #6f5848;
+}
+.steel{
+  background: #b7b7cc;
+}

@@ -6,7 +6,38 @@
       <div class="imageDiv">
         <img width="300" alt="{{pokemon.name}}" src="{{imageUrl}}">
       </div>
-      <div><span>id: </span>{{pokemon.id}}</div>
+      <div class="detail">
+        <table>
+          <tr>
+            <span >
+              <th *ngFor="let type of pokemon.type">
+                <div class="types" [ngClass]="
+                  {
+                    fire: isFire(type), 
+                    normal: isNormal(type),
+                    water: isWater(type),
+                    electric: isElectric(type),
+                    grass: isGrass(type),
+                    ice: isIce(type),
+                    fighting: isFighting(type),
+                    poison: isPoison(type),
+                    ground: isGround(type),
+                    flying: isFlying(type),
+                    psychic: isPsychic(type),
+                    bug: isBug(type),
+                    rock: isRock(type),
+                    ghost: isGhost(type),
+                    dragon: isDragon(type),
+                    dark: isDark(type),
+                    steel: isSteel(type)
+                  }">
+                  {{type}}
+                </div>
+              </th>
+            </span>
+          </tr>
+        </table>
+      </div>
     </div>
     <div class="stat-box">
       <app-stat-chart [poke]="pokemon"></app-stat-chart>
