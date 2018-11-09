@@ -9,32 +9,88 @@
       <div class="detail">
         <table>
           <tr>
-            <span >
-              <th *ngFor="let type of pokemon.type">
-                <div class="types" [ngClass]="
-                  {
-                    fire: isFire(type), 
-                    normal: isNormal(type),
-                    water: isWater(type),
-                    electric: isElectric(type),
-                    grass: isGrass(type),
-                    ice: isIce(type),
-                    fighting: isFighting(type),
-                    poison: isPoison(type),
-                    ground: isGround(type),
-                    flying: isFlying(type),
-                    psychic: isPsychic(type),
-                    bug: isBug(type),
-                    rock: isRock(type),
-                    ghost: isGhost(type),
-                    dragon: isDragon(type),
-                    dark: isDark(type),
-                    steel: isSteel(type)
-                  }">
-                  {{type}}
-                </div>
-              </th>
-            </span>
+            <th *ngFor="let type of pokemon.type">
+              <div class="types" [ngClass]="
+                {
+                  fire: isFire(type), 
+                  normal: isNormal(type),
+                  water: isWater(type),
+                  electric: isElectric(type),
+                  grass: isGrass(type),
+                  ice: isIce(type),
+                  fighting: isFighting(type),
+                  poison: isPoison(type),
+                  ground: isGround(type),
+                  flying: isFlying(type),
+                  psychic: isPsychic(type),
+                  bug: isBug(type),
+                  rock: isRock(type),
+                  ghost: isGhost(type),
+                  dragon: isDragon(type),
+                  dark: isDark(type),
+                  steel: isSteel(type)
+                }">
+                {{type}}
+              </div>
+            </th>
+          </tr>
+        </table>
+        <h3>Strong Against:</h3>
+        <table>
+          <tr>
+            <th *ngFor="let type of advantageTypes">
+              <div class="types" [ngClass]="
+                 {
+                  fire: isFire(type), 
+                  normal: isNormal(type),
+                  water: isWater(type),
+                  electric: isElectric(type),
+                  grass: isGrass(type),
+                  ice: isIce(type),
+                  fighting: isFighting(type),
+                  poison: isPoison(type),
+                  ground: isGround(type),
+                  flying: isFlying(type),
+                  psychic: isPsychic(type),
+                  bug: isBug(type),
+                  rock: isRock(type),
+                  ghost: isGhost(type),
+                  dragon: isDragon(type),
+                  dark: isDark(type),
+                  steel: isSteel(type)
+                }">
+                {{type}}
+              </div>
+            </th>
+          </tr>
+        </table>
+        <h3>Weak Against:</h3>
+        <table>
+          <tr>
+            <th *ngFor="let type of disadvantageTypes">
+              <div class="types" [ngClass]="
+                 {
+                  fire: isFire(type), 
+                  normal: isNormal(type),
+                  water: isWater(type),
+                  electric: isElectric(type),
+                  grass: isGrass(type),
+                  ice: isIce(type),
+                  fighting: isFighting(type),
+                  poison: isPoison(type),
+                  ground: isGround(type),
+                  flying: isFlying(type),
+                  psychic: isPsychic(type),
+                  bug: isBug(type),
+                  rock: isRock(type),
+                  ghost: isGhost(type),
+                  dragon: isDragon(type),
+                  dark: isDark(type),
+                  steel: isSteel(type)
+                }">
+                {{type}}
+              </div>
+            </th>
           </tr>
         </table>
       </div>
