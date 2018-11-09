@@ -75,14 +75,15 @@ export class PokemonDetailComponent implements OnInit {
       id = '0' + id;
     }
     if(+this.route.snapshot.paramMap.get('id') == 122){ //mr mime//83 farfetched?
+      //githug pages hotfix
       //return '../../assets/images/250px-122mr-mime.jpg'
-      return '../assets/images/250px-122mr-mime.jpg';
+      return 'assets/images/250px-122mr-mime.jpg';
     }else if(+this.route.snapshot.paramMap.get('id') == 83){
       //return '../../assets/images/250px-083Farfetchd.jpg'
-      return '../assets/images/250px-083Farfetchd.jpg';
+      return 'assets/images/250px-083Farfetchd.jpg';
     }
     //return '../../assets/images/250px-'+id+this.pokemon.name+'.png';
-    return '../assets/images/250px-'+id+this.pokemon.name+'.png';
+    return 'assets/images/250px-'+id+this.pokemon.name+'.png';
   }
   
 
